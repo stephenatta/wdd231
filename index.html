@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Course home page for WDD 231" />
+  <meta name="author" content="Stephen Amankwaa Atta" />
+  <title>WDD 231 | Stephen Atta</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Site Logo" width="1" height="1" />
+    <span>Stephen Atta</span>
+    <button id="nav-button" class="hamburger" aria-label="Toggle Navigation"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li class="current"><a href="#">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Final</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+<section class="about-section">
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>Hi, I'm Stephen Amankwaa Atta, a software development student at BYU-Idaho. I'm passionate about frontend development, creativity, and blending technology with art.</p>
+    <p>With a background in visual arts, I love working on projects that combine design and code. I’m also skilled in photography, painting, and music.</p>
+    <p>Currently, I’m interning with the Ghana Armed Forces in Public Relations and building my portfolio through projects like this Chamber of Commerce website.</p>
+  </div>
+  <div class="about-photo">
+    <img src="images/stephen.jpg" alt="Stephen Amankwaa Atta">
+  </div>
+</section>
+
+
+    <section>
+      <h2>Course Overview</h2>
+      <div id="course-buttons">
+        <button id="all">All Courses</button>
+        <button id="wdd">WDD Courses</button>
+        <button id="cse">CSE Courses</button>
+      </div>
+      <div id="courses-container"></div>
+      <p id="course-count"></p>
+      <p id="total-credits">Total Credits: 0</p>
+    </section>
+
+    <section>
+      <h2>Resources</h2>
+      <!-- Add meaningful content here -->
+    </section>
+
+    <section>
+      <h2>Updates</h2>
+      <!-- Add announcements or journal here -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/YOUR_GITHUB"><img src="images/github.webp" alt="GitHub" /></a>
+      <a href="https://linkedin.com/in/YOUR_LINKEDIN"><img src="images/linkedin.webp" alt="LinkedIn" /></a>
+    </div>
+    <p>&copy; <span id="year"></span> Stephen Atta, Ghana</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

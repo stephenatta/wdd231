@@ -1,0 +1,47 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-photo img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Larger screen layout */
+@media screen and (min-width: 768px) {
+  .about-section {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-text {
+    flex: 2;
+  }
+ 
+  .about-photo {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+footer .social img {
+  width: 30px;      /* Adjust size as needed */
+  height: auto;
+  margin: 0 10px;   /* Optional spacing between icons */
+  vertical-align: middle;
+}
+
+footer .social {
+  text-align: center;
+  margin-bottom: 10px;
+}
