@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Accra Tech Solutions",
+      "address": "12 Nkrumah Ave, Accra",
+      "phone": "+233 30 123 4567",
+      "website": "https://accratech.com",
+      "image": "tech-solutions.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "African Music",
+      "address": "88 Osu Rd, Accra",
+      "phone": "+233 54 321 7890",
+      "website": "https://kwameclothing.com",
+      "image": "african-music.png",
+      "membership": "Silver"
+    },
+    {
+      "name": "Happy Health Pharmacy",
+      "address": "7 Ridge St, Accra",
+      "phone": "+233 20 456 7890",
+      "website": "https://happypharmacy.com",
+      "image": "happy-pharmacy.svg",
+      "membership": "Member"
+    },
+    {
+      "name": "Exit Realty",
+      "address": "15 Cantonments, Accra",
+      "phone": "+233 24 987 6543",
+      "website": "https://ebanrealty.com",
+      "image": "eban-realty.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "Choco Delight Bakery",
+      "address": "22 Independence Ave, Accra",
+      "phone": "+233 30 765 4321",
+      "website": "https://chocodelightgh.com",
+      "image": "choco-bakery.jpeg",
+      "membership": "Gold"
+    },
+    {
+      "name": "Ghana Green Farms",
+      "address": "Coastal Rd, Accra",
+      "phone": "+233 26 111 2222",
+      "website": "https://ghanagreenfarms.com",
+      "image": "green-farms.webp",
+      "membership": "Member"
+    },
+    {
+      "name": "Bright Minds Academy",
+      "address": "45 Adabraka St, Accra",
+      "phone": "+233 50 987 1234",
+      "website": "https://brightmindsgh.com",
+      "image": "bright-academy.webp",
+      "membership": "Gold"
+    }
+  ]
+}

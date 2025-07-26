@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Directory page for Accra Chamber of Commerce, promoting local businesses and economic growth." />
+  <meta name="author" content="Stephen Ata Amankwaa" />
+
+  <!-- Facebook Open Graph Meta -->
+  <meta property="og:title" content="Accra Chamber of Commerce Directory" />
+  <meta property="og:description" content="Explore local businesses in Accra with our chamber member directory." />
+  <meta property="og:image" content="images/nauvoo-temple.jpg" />
+  <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/directory.html" />
+
+  <title>Directory | Accra Chamber of Commerce</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Accra Chamber of Commerce</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Explore Accra’s Thriving Business Community</h2>
+      <p>Connect with local entrepreneurs and discover business opportunities.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="view-toggle">
+      <button id="gridView" aria-label="Show grid view">Grid View</button>
+      <button id="listView" aria-label="Show list view">List View</button>
+    </div>
+
+    <section id="members" class="grid-view">
+      <!-- Business members will be loaded here by JavaScript -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: info@accracc.org | +233 24 000 0000</p>
+    <p>&copy; <span id="year"></span> Accra Chamber of Commerce</p>
+    <p>Stephen Ata Amankwaa | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/directory.js"></script>
+</body>
+</html>

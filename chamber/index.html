@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Home page for the Accra Chamber of Commerce, promoting local businesses and economic growth." />
+  <meta name="author" content="Stephen Ata Amankwaa" />
+
+  <!-- Facebook Open Graph Meta -->
+  <meta property="og:title" content="Accra Chamber of Commerce" />
+  <meta property="og:description" content="Connecting local businesses and supporting community growth in Accra." />
+  <meta property="og:image" content="images/chamber-og.jpg" />
+  <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/index.html" />
+
+  <title>Home | Accra Chamber of Commerce</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Accra Chamber of Commerce</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Welcome to Accra Chamber of Commerce</h2>
+      <p>Empowering local businesses and building community strength.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="cta">
+      <h2>Join the Chamber</h2>
+      <p>Connect with other businesses, grow your network, and access valuable resources.</p>
+      <a href="join.html" class="btn">Become a Member</a>
+    </section>
+
+    <section class="highlights">
+      <div class="card">
+        <h3>Upcoming Events</h3>
+        <p>Workshops, networking luncheons, and local market promotions. Stay updated!</p>
+      </div>
+      <div class="card">
+        <h3>Business Spotlight</h3>
+        <p>See how local businesses are making an impact in our community every month.</p>
+      </div>
+      <div class="card">
+        <h3>Weather Update</h3>
+        <p>Current conditions in Accra: <span id="weather">Loading...</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: info@accracc.org | +233 24 000 0000</p>
+    <p>&copy; <span id="year"></span> Accra Chamber of Commerce</p>
+    <p>Stephen Ata Amankwaa | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/weather.js"></script>
+</body>
+</html>
