@@ -1,0 +1,29 @@
+{
+  "members": [
+    {
+      "name": "Timbuktu Coffee Co.",
+      "address": "123 Bean Rd, Timbuktu",
+      "phone": "555-123-4567",
+      "website": "https://timbuktucoffee.example.com",
+      "image": "coffee.jpg",
+      "level": 3
+    },
+    {
+      "name": "Desert Tech Hub",
+      "address": "456 Innovation Way, Timbuktu",
+      "phone": "555-987-6543",
+      "website": "https://deserttech.example.com",
+      "image": "tech.jpg",
+      "level": 2
+    },
+    {
+      "name": "Camel Courier",
+      "address": "789 Delivery Ln, Timbuktu",
+      "phone": "555-567-8910",
+      "website": "https://camelcourier.example.com",
+      "image": "courier.jpg",
+      "level": 1
+    }
+    // Add 4+ more members here
+  ]
+}

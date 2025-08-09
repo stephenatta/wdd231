@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Apply to join the Accra Chamber of Commerce. Become a member and grow your business." />
+  <meta name="author" content="Stephen Ata Amankwaa" />
+
+  <title>Join | Accra Chamber of Commerce</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/join.css" />
+</head>
+<body>
+  <header>
+    <h1>Accra Chamber of Commerce</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Membership Application</h2>
+
+    <div class="form-container">
+      <!-- Membership Form -->
+      <form method="get" action="thankyou.html">
+        <label>
+          First Name:
+          <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
+        </label>
+
+        <label>
+          Last Name:
+          <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
+        </label>
+
+        <label>
+          Organizational Title:
+          <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\\s\\-]{7,}">
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@email.com" required>
+        </label>
+
+        <label>
+          Mobile Number:
+          <input type="tel" name="phone" title="Mobile Number" autocomplete="tel" required>
+        </label>
+
+        <label>
+          Business / Organization Name:
+          <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+        </label>
+
+        <label>
+          Membership Level:
+          <select name="membership" required>
+            <option value="">--Select Level--</option>
+            <option value="NP">NP Membership (Non-Profit, Free)</option>
+            <option value="Bronze">Bronze Membership</option>
+            <option value="Silver">Silver Membership</option>
+            <option value="Gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>
+          Business / Organization Description:
+          <textarea name="description" title="Organization Description"></textarea>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <input type="submit" value="Submit Application">
+      </form>
+
+      <!-- Membership Cards -->
+      <section class="membership-cards">
+        <div class="card" id="np-card">
+          <h3>NP Membership</h3>
+          <p>Non-Profit organizations. No fee.</p>
+          <button data-modal="np-modal">More Info</button>
+        </div>
+
+        <div class="card" id="bronze-card">
+          <h3>Bronze Membership</h3>
+          <p>Affordable entry-level membership.</p>
+          <button data-modal="bronze-modal">More Info</button>
+        </div>
+
+        <div class="card" id="silver-card">
+          <h3>Silver Membership</h3>
+          <p>Includes more benefits and visibility.</p>
+          <button data-modal="silver-modal">More Info</button>
+        </div>
+
+        <div class="card" id="gold-card">
+          <h3>Gold Membership</h3>
+          <p>Maximum benefits and exposure.</p>
+          <button data-modal="gold-modal">More Info</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modals -->
+    <dialog id="np-modal">
+      <h3>NP Membership Benefits</h3>
+      <ul>
+        <li>Free for Non-Profits</li>
+        <li>Event participation</li>
+        <li>Networking opportunities</li>
+      </ul>
+      <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="bronze-modal">
+      <h3>Bronze Membership Benefits</h3>
+      <ul>
+        <li>Low annual fee</li>
+        <li>Basic advertising on our site</li>
+        <li>Member newsletter access</li>
+      </ul>
+      <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="silver-modal">
+      <h3>Silver Membership Benefits</h3>
+      <ul>
+        <li>All Bronze benefits</li>
+        <li>Featured directory listing</li>
+        <li>Discounted event tickets</li>
+      </ul>
+      <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="gold-modal">
+      <h3>Gold Membership Benefits</h3>
+      <ul>
+        <li>All Silver benefits</li>
+        <li>Homepage spotlight</li>
+        <li>Exclusive networking events</li>
+      </ul>
+      <button class="close-modal">Close</button>
+    </dialog>
+    
+  </main>
+
+  <footer>
+    <p>Contact: info@accracc.org | +233 24 000 0000</p>
+    <p>&copy; <span id="year"></span> Accra Chamber of Commerce</p>
+    <p>Stephen Ata Amankwaa | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/join.js"></script>
+</body>
+</html>
