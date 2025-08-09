@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Apply to join the Accra Chamber of Commerce. Become a member and grow your business." />
+  <meta name="description" content="Apply to join the Accra Chamber of Commerce. Network with local businesses, access resources, and grow your professional connections." />
   <meta name="author" content="Stephen Ata Amankwaa" />
 
   <title>Join | Accra Chamber of Commerce</title>
@@ -11,10 +11,15 @@
   <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="stylesheet" href="styles/join.css" />
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Join the Accra Chamber of Commerce" />
+  <meta property="og:description" content="Apply to join the Accra Chamber of Commerce. Become a member and grow your business with exclusive benefits and networking opportunities." />
+  <meta property="og:image" content="images/chamber-og.jpg" />
+  <meta property="og:url" content="https://stephenatta.github.io/wdd231/chamber/join.html" />
 </head>
 <body>
   <header>
-    <h1>Accra Chamber of Commerce</h1>
     <nav>
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
@@ -26,6 +31,7 @@
   </header>
 
   <main>
+    <h1>Join the Accra Chamber of Commerce</h1>
     <h2>Membership Application</h2>
 
     <div class="form-container">
@@ -43,7 +49,7 @@
 
         <label>
           Organizational Title:
-          <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\\s\\-]{7,}">
+          <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
         </label>
 
         <label>
@@ -79,7 +85,7 @@
 
         <input type="hidden" id="timestamp" name="timestamp">
 
-        <input type="submit" value="Submit Application">
+        <input type="submit" value="Submit Membership Application">
       </form>
 
       <!-- Membership Cards -->
@@ -87,25 +93,25 @@
         <div class="card" id="np-card">
           <h3>NP Membership</h3>
           <p>Non-Profit organizations. No fee.</p>
-          <button data-modal="np-modal">More Info</button>
+          <button data-modal="np-modal" aria-label="View NP Membership Benefits">More Info</button>
         </div>
 
         <div class="card" id="bronze-card">
           <h3>Bronze Membership</h3>
           <p>Affordable entry-level membership.</p>
-          <button data-modal="bronze-modal">More Info</button>
+          <button data-modal="bronze-modal" aria-label="View Bronze Membership Benefits">More Info</button>
         </div>
 
         <div class="card" id="silver-card">
           <h3>Silver Membership</h3>
           <p>Includes more benefits and visibility.</p>
-          <button data-modal="silver-modal">More Info</button>
+          <button data-modal="silver-modal" aria-label="View Silver Membership Benefits">More Info</button>
         </div>
 
         <div class="card" id="gold-card">
           <h3>Gold Membership</h3>
           <p>Maximum benefits and exposure.</p>
-          <button data-modal="gold-modal">More Info</button>
+          <button data-modal="gold-modal" aria-label="View Gold Membership Benefits">More Info</button>
         </div>
       </section>
     </div>
@@ -150,7 +156,6 @@
       </ul>
       <button class="close-modal">Close</button>
     </dialog>
-    
   </main>
 
   <footer>
@@ -159,6 +164,9 @@
     <p>Stephen Ata Amankwaa | WDD 231 | Last Modified: <span id="lastModified"></span></p>
   </footer>
 
+  <script>
+    document.getElementById("timestamp").value = new Date().toISOString();
+  </script>
   <script src="scripts/main.js"></script>
   <script src="scripts/join.js"></script>
 </body>

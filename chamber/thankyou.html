@@ -1,24 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for joining the Accra Chamber of Commerce.">
+  <meta name="author" content="Stephen Ata Amankwaa">
+
   <title>Thank You | Accra Chamber of Commerce</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/join.css">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Thank You for Joining the Accra Chamber of Commerce" />
+  <meta property="og:description" content="Your membership application has been submitted successfully." />
+  <meta property="og:image" content="images/chamber-og.jpg" />
+  <meta property="og:url" content="https://stephenatta.github.io/wdd231/chamber/thankyou.html" />
+
+  <style>
+    .thankyou-card {
+      background-color: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 2rem auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border: 1px solid #ddd;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    .thankyou-card h2 {
+      color: #004080;
+      margin-bottom: 1rem;
+    }
+    .thankyou-card p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+    .thankyou-card strong {
+      color: #333;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(15px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Accra Chamber of Commerce</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <div id="formData"></div>
+    <h1 style="text-align:center;">Thank You!</h1>
+    <p style="text-align:center;">We appreciate your interest in joining the Accra Chamber of Commerce.</p>
+
+    <div class="thankyou-card">
+      <h2>Your Application Summary</h2>
+      <p><strong>First Name:</strong> <span id="firstName"></span></p>
+      <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Mobile Number:</strong> <span id="phone"></span></p>
+      <p><strong>Organization:</strong> <span id="organization"></span></p>
+      <p><strong>Application Timestamp:</strong> <span id="timestamp"></span></p>
+    </div>
+
+    <p style="text-align:center;">We will review your application and contact you soon.</p>
   </main>
 
   <footer>
+    <p>Contact: info@accracc.org | +233 24 000 0000</p>
     <p>&copy; <span id="year"></span> Accra Chamber of Commerce</p>
+    <p>Stephen Ata Amankwaa | WDD 231 | Last Modified: <span id="lastModified"></span></p>
   </footer>
 
-  <script src="scripts/thankyou.js"></script>
+  <script>
+    // Footer info
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+
+    // Query string parameters
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("firstName").textContent = params.get("firstName") || "";
+    document.getElementById("lastName").textContent = params.get("lastName") || "";
+    document.getElementById("email").textContent = params.get("email") || "";
+    document.getElementById("phone").textContent = params.get("phone") || "";
+    document.getElementById("organization").textContent = params.get("organization") || "";
+    document.getElementById("timestamp").textContent = params.get("timestamp") || "";
+  </script>
 </body>
 </html>
