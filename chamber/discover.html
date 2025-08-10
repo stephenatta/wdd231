@@ -1,54 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover | Accra Chamber of Commerce</title>
-  <meta name="description" content="Discover Accra: Explore attractions, businesses, and opportunities with the Accra Chamber of Commerce.">
-  <meta name="author" content="Stephen Atta Amankwaa">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/discover.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | Accra Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <script defer src="scripts/discover.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Discover Accra</h1>
+<header>
+    <h1>Accra Chamber of Commerce</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="discover.html" class="active">Discover</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
 
-  <main>
-    <aside id="visitMessage"></aside>
-
+<main>
     <section class="cards-grid">
-      <article id="card1"></article>
-      <article id="card2"></article>
-      <article id="card3"></article>
-      <article id="card4"></article>
-      <article id="card5"></article>
-      <article id="card6"></article>
-      <article id="card7"></article>
-      <article id="card8"></article>
+        <h2>Discover Accra</h2>
+        <!-- Cards will be injected here by discover.js -->
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Accra Chamber of Commerce | WDD 231 Project | Stephen Atta Amankwaa</p>
-  </footer>
+    <aside class="visit-message" id="visitMessage">
+        <!-- Visit message inserted here by JS -->
+    </aside>
+</main>
 
-  <!-- JS -->
-  <script src="scripts/discover.js"></script>
-  <script>
-    // Update footer year
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<footer>
+    <p>&copy; <span id="year"></span> Accra Chamber of Commerce</p>
+</footer>
 </body>
 </html>
