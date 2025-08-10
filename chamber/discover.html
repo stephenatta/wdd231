@@ -2,25 +2,19 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Discover | Accra Chamber of Commerce</title>
-  <meta name="description" content="Discover the attractions, culture, and business opportunities in Accra with the Chamber of Commerce.">
+  <meta name="description" content="Discover Accra: Explore attractions, businesses, and opportunities with the Accra Chamber of Commerce.">
   <meta name="author" content="Stephen Atta Amankwaa">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Discover Accra - Accra Chamber of Commerce">
-  <meta property="og:description" content="Explore attractions, culture, and business opportunities in Accra with the Chamber of Commerce.">
-  <meta property="og:image" content="images/discover-og.jpg">
-  <meta property="og:url" content="https://stephenatta.github.io/wdd231/chamber/discover.html">
-
-  <link rel="icon" href="favicon.ico">
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/discover.css">
 </head>
 <body>
   <header>
-    <h1>Accra Chamber of Commerce</h1>
+    <h1>Discover Accra</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -32,41 +26,29 @@
   </header>
 
   <main>
-    <aside id="visitor-message" class="sidebar"></aside>
+    <aside id="visitMessage"></aside>
 
-    <section class="discover-grid">
-      <!-- Cards will be populated by JS using JSON -->
-      <!-- Example card structure -->
-      <!-- Repeat 8 times with JSON data -->
-      <article class="card">
-        <h2>Attraction Title</h2>
-        <figure>
-          <img src="images/sample.webp" alt="Description of attraction" width="300" height="200">
-        </figure>
-        <address>123 Example Street, Accra</address>
-        <p>Short description of the attraction, business, or cultural highlight.</p>
-        <button>Learn More</button>
-      </article>
+    <section class="cards-grid">
+      <article id="card1"></article>
+      <article id="card2"></article>
+      <article id="card3"></article>
+      <article id="card4"></article>
+      <article id="card5"></article>
+      <article id="card6"></article>
+      <article id="card7"></article>
+      <article id="card8"></article>
     </section>
   </main>
 
   <footer>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="discover.html" class="active">Discover</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-      </ul>
-    </nav>
-    <p>&copy; <span id="year"></span> Accra Chamber of Commerce. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Accra Chamber of Commerce | WDD 231 Project | Stephen Atta Amankwaa</p>
   </footer>
 
-  <script src="scripts/lastvisit.js"></script>
+  <!-- JS -->
   <script src="scripts/discover.js"></script>
   <script>
-    // Footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
