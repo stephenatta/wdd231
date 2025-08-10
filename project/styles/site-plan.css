@@ -1,0 +1,51 @@
+/* Color Schema */
+:root {
+  --primary-color: #0077b6; /* Deep blue for headings and accents */
+  --secondary-color: #caf0f8; /* Light sky blue for backgrounds */
+  --background-color: #ffffff; /* White background */
+  --text-color: #03045e; /* Dark navy for text */
+}
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 1rem 2rem;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+  margin-top: 1.5rem;
+}
+
+h1 {
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 0.3rem;
+}
+
+.accent {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Wireframe image styling */
+.wireframe-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+  display: block;
+  margin: 1rem auto;
+}
