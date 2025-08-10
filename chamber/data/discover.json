@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Kwame Nkrumah Memorial Park",
+    "image": "images/kwame-nkrumah.webp",
+    "address": "High St, Accra, Ghana",
+    "description": "A national park dedicated to Ghana’s first president with a mausoleum, museum, and statues."
+  },
+  {
+    "title": "Makola Market",
+    "image": "images/makola-market.webp",
+    "address": "Kojo Thompson Rd, Accra, Ghana",
+    "description": "A vibrant marketplace known for fabrics, goods, and fresh produce."
+  },
+  {
+    "title": "Independence Arch",
+    "image": "images/independence-arch.webp",
+    "address": "Black Star Square, Accra, Ghana",
+    "description": "A historic monument commemorating Ghana’s independence."
+  },
+  {
+    "title": "Labadi Beach",
+    "image": "images/labadi-beach.webp",
+    "address": "La, Accra, Ghana",
+    "description": "One of Accra's most popular beaches with music, horseback riding, and food vendors."
+  },
+  {
+    "title": "Accra Arts Centre",
+    "image": "images/arts-centre.webp",
+    "address": "Barnes Rd, Accra, Ghana",
+    "description": "A hub for Ghanaian crafts, beadwork, and traditional art."
+  },
+  {
+    "title": "Osu Castle",
+    "image": "images/osu-castle.webp",
+    "address": "Accra, Ghana",
+    "description": "A historic fort built by the Danes, once serving as the seat of government."
+  },
+  {
+    "title": "National Theatre",
+    "image": "images/national-theatre.webp",
+    "address": "South Liberia Rd, Accra, Ghana",
+    "description": "A cultural center for performing arts including plays, concerts, and dance shows."
+  },
+  {
+    "title": "W.E.B. Du Bois Centre",
+    "image": "images/web-dubois.webp",
+    "address": "1 Circular Rd, Accra, Ghana",
+    "description": "A research center and memorial for African-American scholar W.E.B. Du Bois."
+  }
+]
