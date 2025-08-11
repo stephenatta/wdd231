@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>accra weather — forecast</title>
+  <meta name="description" content="Accra Weather forecast page showing multiple forecast entries.">
+  <meta name="author" content="Stephen Amankwaa Atta">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="Accra Weather logo" class="logo">
+      <span class="site-title">Accra Weather</span>
+    </div>
+    <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation">☰</button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="forecast.html" aria-current="page">Forecast</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h1>5-day / 3-hour Forecast (sample)</h1>
+      <p>Below are the next forecast entries. This page demonstrates dynamic rendering of at least 15 items.</p>
+      <div id="forecast-list" class="forecast-list" aria-live="polite">
+        <!-- forecast items injected by JS -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Accra Weather | <a href="attributions.html">Attributions</a></p>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

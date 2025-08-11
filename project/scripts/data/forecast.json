@@ -1,0 +1,32 @@
+{
+  "cod": "200",
+  "message": 0,
+  "cnt": 20,
+  "list": [
+    { "dt": 1700000000, "dt_txt":"2025-11-14 00:00:00", "main":{"temp":29,"humidity":78}, "wind":{"speed":3.2}, "weather":[{"description":"clear sky"}] },
+    { "dt": 1700003600, "dt_txt":"2025-11-14 03:00:00", "main":{"temp":28,"humidity":80}, "wind":{"speed":2.8}, "weather":[{"description":"few clouds"}] },
+    { "dt": 1700007200, "dt_txt":"2025-11-14 06:00:00", "main":{"temp":27,"humidity":82}, "wind":{"speed":2.1}, "weather":[{"description":"scattered clouds"}] },
+    { "dt": 1700010800, "dt_txt":"2025-11-14 09:00:00", "main":{"temp":30,"humidity":70}, "wind":{"speed":3.6}, "weather":[{"description":"broken clouds"}] },
+    { "dt": 1700014400, "dt_txt":"2025-11-14 12:00:00", "main":{"temp":32,"humidity":65}, "wind":{"speed":4.0}, "weather":[{"description":"light rain"}] },
+    { "dt": 1700018000, "dt_txt":"2025-11-14 15:00:00", "main":{"temp":31,"humidity":67}, "wind":{"speed":3.7}, "weather":[{"description":"moderate rain"}] },
+    { "dt": 1700021600, "dt_txt":"2025-11-14 18:00:00", "main":{"temp":29,"humidity":75}, "wind":{"speed":3.0}, "weather":[{"description":"light rain"}] },
+    { "dt": 1700025200, "dt_txt":"2025-11-14 21:00:00", "main":{"temp":28,"humidity":78}, "wind":{"speed":2.6}, "weather":[{"description":"clear sky"}] },
+    { "dt": 1700028800, "dt_txt":"2025-11-15 00:00:00", "main":{"temp":27,"humidity":80}, "wind":{"speed":2.4}, "weather":[{"description":"clear sky"}] },
+    { "dt": 1700032400, "dt_txt":"2025-11-15 03:00:00", "main":{"temp":26,"humidity":82}, "wind":{"speed":2.0}, "weather":[{"description":"few clouds"}] },
+    { "dt": 1700036000, "dt_txt":"2025-11-15 06:00:00", "main":{"temp":27,"humidity":81}, "wind":{"speed":2.3}, "weather":[{"description":"scattered clouds"}] },
+    { "dt": 1700039600, "dt_txt":"2025-11-15 09:00:00", "main":{"temp":30,"humidity":72}, "wind":{"speed":3.5}, "weather":[{"description":"broken clouds"}] },
+    { "dt": 1700043200, "dt_txt":"2025-11-15 12:00:00", "main":{"temp":31,"humidity":68}, "wind":{"speed":4.1}, "weather":[{"description":"light rain"}] },
+    { "dt": 1700046800, "dt_txt":"2025-11-15 15:00:00", "main":{"temp":31,"humidity":69}, "wind":{"speed":3.8}, "weather":[{"description":"moderate rain"}] },
+    { "dt": 1700050400, "dt_txt":"2025-11-15 18:00:00", "main":{"temp":29,"humidity":76}, "wind":{"speed":3.2}, "weather":[{"description":"light rain"}] },
+    { "dt": 1700054000, "dt_txt":"2025-11-15 21:00:00", "main":{"temp":28,"humidity":79}, "wind":{"speed":2.7}, "weather":[{"description":"clear sky"}] },
+    { "dt": 1700057600, "dt_txt":"2025-11-16 00:00:00", "main":{"temp":27,"humidity":81}, "wind":{"speed":2.2}, "weather":[{"description":"clear sky"}] },
+    { "dt": 1700061200, "dt_txt":"2025-11-16 03:00:00", "main":{"temp":26,"humidity":83}, "wind":{"speed":2.1}, "weather":[{"description":"few clouds"}] },
+    { "dt": 1700064800, "dt_txt":"2025-11-16 06:00:00", "main":{"temp":27,"humidity":84}, "wind":{"speed":2.0}, "weather":[{"description":"scattered clouds"}] },
+    { "dt": 1700068400, "dt_txt":"2025-11-16 09:00:00", "main":{"temp":30,"humidity":73}, "wind":{"speed":3.6}, "weather":[{"description":"broken clouds"}] }
+  ],
+  "city": {
+    "id": 2306104,
+    "name": "Accra",
+    "country": "GH"
+  }
+}

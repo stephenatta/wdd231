@@ -1,67 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Weather Dashboard Site Plan</title>
-  <link rel="stylesheet" href="styles/site-plan.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Accra Weather — Home</title>
+  <meta name="description" content="Accra Weather — real-time weather for Accra, Ghana (temperature, humidity, wind).">
+  <meta name="author" content="Stephen Amankwaa Atta">
+  <!-- Open Graph basic -->
+  <meta property="og:title" content="Accra Weather" />
+  <meta property="og:description" content="Real-time weather for Accra, Ghana." />
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <h1>Individual Project Site Plan</h1>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="Accra Weather logo" class="logo">
+      <span class="site-title">Accra Weather</span>
+    </div>
 
-  <section id="site-name">
-    <h2>Site Name</h2>
-    <p><span class="accent">Project Name:</span> Accra Weather Dashboard</p>
-    <p>This name clearly identifies the site as a weather information tool specifically for Accra, Ghana, making it easy for local users to understand its purpose.</p>
-  </section>
+    <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation">
+      ☰
+    </button>
 
-  <section id="site-purpose">
-    <h2>Site Purpose</h2>
-    <p>This website provides real-time weather information for Accra, Ghana, including temperature, humidity, and wind speed, sourced from the OpenWeatherMap API. The site is designed to be simple, clean, mobile-friendly, and accessible, helping residents and visitors easily stay updated with current weather conditions.</p>
-  </section>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="forecast.html">Forecast</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section id="scenarios">
-    <h2>Scenarios</h2>
-    <ul>
-      <li>What is the current temperature and humidity in Accra right now?</li>
-      <li>How can I quickly see if it is windy or rainy today in Accra?</li>
-    </ul>
-  </section>
+  <main>
+    <section class="hero">
+      <h1>Accra Weather</h1>
+      <p class="lead">Real-time conditions and short-term forecast for Accra, Ghana.</p>
 
-  <section id="color-schema">
-    <h2>Color Schema</h2>
-    <p><strong>Primary Color:</strong> <span style="color: var(--primary-color);">#0077b6 (Deep Blue)</span> — used for all headings, important buttons, and accents.</p>
-    <p><strong>Secondary Color:</strong> <span style="color: var(--secondary-color);">#caf0f8 (Light Sky Blue)</span> — used as background color to keep the design fresh and airy.</p>
-  </section>
+      <div class="controls">
+        <label for="unit-select">Units:</label>
+        <select id="unit-select" aria-label="Choose units">
+          <option value="metric">Celsius (°C)</option>
+          <option value="imperial">Fahrenheit (°F)</option>
+        </select>
 
-  <section id="typography">
-    <h2>Typography</h2>
-    <ul>
-      <li><strong>Montserrat (Bold)</strong> — used for all headings (h1, h2, h3) to create a strong, modern look.</li>
-      <li><strong>Roboto</strong> — used for body text and paragraphs for readability.</li>
-    </ul>
-  </section>
+        <button id="refresh-btn" class="btn">Refresh</button>
+        <a href="forecast.html" class="btn secondary">See Forecast</a>
+      </div>
+    </section>
 
-  <section id="wireframe">
-    <h2>Wireframe</h2>
-    <p>The wireframe below illustrates the home page layout for both mobile and desktop views.</p>
-    <img src="images/wireframe.png" alt="Wireframe for Weather Dashboard mobile and desktop views" class="wireframe-image">
-  </section>
+    <section id="current-summary" class="card" aria-live="polite">
+      <!-- Current weather summary inserted by JS -->
+    </section>
 
-  <section id="testing">
-    <h2>Testing and Validation</h2>
-    <p>Testing for this project will include:</p>
-    <ul>
-      <li>HTML validation using W3C Validator</li>
-      <li>Accessibility testing with tools like Axe or WAVE</li>
-      <li>Color contrast verification to meet WCAG guidelines</li>
-      <li>SEO best practices including semantic markup and meta tags</li>
-      <li>Performance checks, including load time and API responsiveness</li>
-    </ul>
-  </section>
+    <section class="features">
+      <h2>Why Use Accra Weather?</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Real-Time Data</h3>
+          <p>Stay updated with live temperature, humidity, and wind readings for Accra.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Accurate Forecasts</h3>
+          <p>Plan ahead with reliable short-term weather predictions tailored for Accra.</p>
+        </div>
+        <div class="feature-card">
+          <h3>User-Friendly</h3>
+          <p>Enjoy a simple, responsive design that works on all devices.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>Copyright © 2025 BYU-Pathway Worldwide</p>
+    <p>&copy; 2025 Accra Weather | <a href="attributions.html">Attributions</a> | <a href="https://youtu.be/REPLACE_WITH_YOUR_VIDEO" target="_blank" rel="noopener">Demo Video</a></p>
   </footer>
+
+  <!-- scripts -->
+  <script type="module" src="scripts/main.js"></script>
 </body>
 </html>

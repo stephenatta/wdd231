@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Accra Weather — About</title>
+  <meta name="description" content="Learn more about the purpose, features, and technology behind Accra Weather.">
+  <meta name="author" content="Stephen Amankwaa Atta">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="Accra Weather logo" class="logo">
+      <span class="site-title">Accra Weather</span>
+    </div>
+    <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation">☰</button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="forecast.html">Forecast</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero about-hero">
+      <div class="hero-content">
+        <h1>About Accra Weather</h1>
+        <p class="lead">Delivering accurate, localized weather data for Accra, Ghana — accessible, responsive, and user-friendly.</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="card">
+      <h2>Project Purpose</h2>
+      <p>The <strong>Accra Weather</strong> app was developed to make reliable and localized weather forecasts accessible to everyone in Accra. It is designed with performance, accessibility, and responsiveness in mind, while showcasing API integration and modern front-end techniques.</p>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features">
+      <h2>Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Real-time Data</h3>
+          <p>Pulls live weather updates from OpenWeatherMap API, with fallback data for offline testing.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Responsive Design</h3>
+          <p>Optimized for all devices with mobile-first design and accessible navigation controls.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Unit Preferences</h3>
+          <p>Save and switch between Celsius and Fahrenheit easily, with settings stored locally.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Accessibility</h3>
+          <p>Semantic HTML, ARIA attributes, and keyboard-friendly interactions for all users.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="card">
+      <h2>Technology Used</h2>
+      <ul>
+        <li><strong>HTML5</strong> — semantic and accessible markup</li>
+        <li><strong>CSS3</strong> — responsive, mobile-first layout</li>
+        <li><strong>JavaScript (ES6 modules)</strong> — modular architecture</li>
+        <li><strong>OpenWeatherMap API</strong> — real-time weather data</li>
+        <li><strong>Local JSON</strong> — offline / fallback data support</li>
+      </ul>
+    </section>
+
+    <!-- Developer Section -->
+    <section class="card">
+      <h2>About the Developer</h2>
+      <p>This project was built by <strong>Stephen Amankwaa Atta</strong>, a passionate web developer focused on building accessible, user-friendly, and performance-driven applications. Inspired by real-world needs, Stephen ensures that Accra Weather serves as both a functional tool and a learning showcase for modern web practices.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Accra Weather | <a href="attributions.html">Attributions</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

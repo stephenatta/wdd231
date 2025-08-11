@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>accra weather — contact submitted</title>
+  <meta name="description" content="Submitted contact form data.">
+  <meta name="author" content="Stephen Amankwaa Atta">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <main>
+    <section class="card">
+      <h1>Form Submission</h1>
+      <div id="submitted-data">
+        <!-- script will parse query string and display -->
+      </div>
+      <p><a href="index.html">Back to Home</a></p>
+    </section>
+  </main>
+
+  <script>
+    // Simple client-side parsing of query string for display (form-action does not require server)
+    (function () {
+      const out = document.getElementById('submitted-data');
+      const params = new URLSearchParams(location.search);
+      if ([...params].length === 0) {
+        out.innerHTML = '<p>No form data received.</p>';
+        return;
+      }
+      const dl = document.createElement('dl');
+      params.forEach((value, key) => {
+        const dt = document.createElement('dt'); dt.textContent = key;
+        const dd = document.createElement('dd'); dd.textContent = value;
+        dl.appendChild(dt); dl.appendChild(dd);
+      });
+      out.appendChild(dl);
+    })();
+  </script>
+</body>
+</html>
