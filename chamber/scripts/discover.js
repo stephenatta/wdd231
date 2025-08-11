@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 const figure = document.createElement("figure");
                 const img = document.createElement("img");
                 img.src = item.image;
-                img.alt = item.name;
+                img.alt = item.name || "Attraction image"; // Fallback alt
                 img.width = 300;
                 img.height = 200;
-                img.loading = "lazy"; // Lazy loading added
+                img.loading = "lazy"; // Lazy loading
                 figure.appendChild(img);
 
                 const address = document.createElement("address");
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!lastVisit) {
         visitMessage.textContent = "Welcome! Let us know if you have any questions.";
     } else {
-        const daysSince = Math.floor((currentTime - lastVisit) / (1000 * 60 * 60 * 24));
+        const daysSince = Math.floor((currentTime - parseInt(lastVisit, 10)) / (1000 * 60 * 60 * 24));
         if (daysSince < 1) {
             visitMessage.textContent = "Back so soon! Awesome!";
         } else if (daysSince === 1) {
