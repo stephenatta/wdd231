@@ -2,12 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>accra weather — contact</title>
-  <meta name="description" content="Contact Accra Weather — send a message.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Accra Weather — Contact</title>
+  <meta name="description" content="Contact Accra Weather — send us your feedback or questions.">
   <meta name="author" content="Stephen Amankwaa Atta">
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    /* Contact Page Specific Styling */
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+      background-color: #f5f7fa;
+    }
+
+    .contact-card {
+      background: #fff;
+      padding: 2rem;
+      max-width: 500px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-card h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+    }
+
+    form label {
+      font-weight: 600;
+      margin-top: 1rem;
+      display: block;
+      color: #34495e;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    form input:focus, form textarea:focus {
+      border-color: #3498db;
+      outline: none;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      margin-top: 1.5rem;
+      padding: 0.9rem;
+      background: #3498db;
+      color: white;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #2980b9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2c3e50;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #ecf0f1;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -27,16 +105,19 @@
   </header>
 
   <main>
-    <section class="card">
+    <section class="contact-card">
       <h1>Contact Us</h1>
       <form action="form-action.html" method="get" id="contact-form">
         <label for="name">Name</label>
-        <input id="name" name="name" required>
+        <input id="name" name="name" placeholder="Your full name" required>
+
         <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
+        <input id="email" name="email" type="email" placeholder="your@email.com" required>
+
         <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-        <button type="submit" class="btn">Send</button>
+        <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
       </form>
     </section>
   </main>
