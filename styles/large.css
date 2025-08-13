@@ -1,13 +1,3 @@
-/* Apply font optical sizing only if browser supports it */
-@supports (font-optical-sizing: auto) {
-    body,
-    h1, h2, h3, h4, h5, h6 {
-        font-optical-sizing: auto;
-    }
-}
-
-/* Example: Keep your original large.css styles below this line */
-
 /* Layout for large screens */
 header {
     display: grid;
