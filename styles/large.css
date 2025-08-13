@@ -1,8 +1,3 @@
-/* Global font to match small.css */
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
 .about-section {
   display: flex;
   flex-direction: column;
@@ -40,9 +35,9 @@ body {
 }
 
 footer .social img {
-  width: 30px;
+  width: 30px;      /* Adjust size as needed */
   height: auto;
-  margin: 0 10px;
+  margin: 0 10px;   /* Optional spacing between icons */
   vertical-align: middle;
 }
 
