@@ -40,9 +40,9 @@ body {
 }
 
 footer .social img {
-  width: 30px;      /* Adjust size as needed */
+  width: 30px;
   height: auto;
-  margin: 0 10px;   /* Optional spacing between icons */
+  margin: 0 10px;
   vertical-align: middle;
 }
 
