@@ -1,3 +1,8 @@
+/* Global font to match small.css */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .about-section {
   display: flex;
   flex-direction: column;
