@@ -2,27 +2,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Home page for the Accra Chamber of Commerce, promoting local businesses and economic growth." />
-  <meta name="author" content="Stephen Atta Amankwaa" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home page for the Accra Chamber of Commerce, promoting local businesses and economic growth.">
+  <meta name="author" content="Stephen Atta Amankwaa">
 
-<!-- Open Graph Meta Tags -->
-<meta property="og:title" content="Accra Chamber of Commerce">
-<meta property="og:description" content="Welcome to the Accra Chamber of Commerce. Connecting businesses, promoting growth, and building a vibrant community.">
-<meta property="og:image" content="https://stephenatta.github.io/wdd231/images/osu-oxford-street.webp">
-<meta property="og:url" content="https://stephenatta.github.io/wdd231/">
-<meta property="og:type" content="website">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Accra Chamber of Commerce">
+  <meta property="og:description" content="Welcome to the Accra Chamber of Commerce. Connecting businesses, promoting growth, and building a vibrant community.">
+  <meta property="og:image" content="https://stephenatta.github.io/wdd231/images/osu-oxford-street.webp">
+  <meta property="og:url" content="https://stephenatta.github.io/wdd231/">
+  <meta property="og:type" content="website">
 
   <title>Home | Accra Chamber of Commerce</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="styles/normalize.css" />
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts Link (instead of @import) -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
   <header>
-    <h1>Accra Chamber of Commerce</h1>
     <nav>
       <ul class="nav-menu">
         <li><a href="index.html" class="active">Home</a></li>
@@ -33,14 +36,17 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Welcome to Accra Chamber of Commerce</h2>
-      <p>Empowering local businesses and building community strength.</p>
-    </div>
-  </section>
-
   <main>
+    <!-- h1 moved to be first element in main -->
+    <h1>Accra Chamber of Commerce</h1>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Welcome to Accra Chamber of Commerce</h2>
+        <p>Empowering local businesses and building community strength.</p>
+      </div>
+    </section>
+
     <section class="cta">
       <h2>Join the Chamber</h2>
       <p>Connect with other businesses, grow your network, and access valuable resources.</p>
@@ -55,6 +61,8 @@
       <div class="card">
         <h3>Business Spotlight</h3>
         <p>See how local businesses are making an impact in our community every month.</p>
+        <!-- Example below-the-fold image with lazy loading -->
+        <img src="images/chamber.jpeg" alt="Local business owner" loading="lazy">
       </div>
       <div class="card">
         <h3>Weather Update</h3>
@@ -66,11 +74,10 @@
   <footer>
     <p>Contact: info@accracc.org | +233 24 000 0000</p>
     <p>&copy; <span id="year"></span> Accra Chamber of Commerce</p>
-    <p>Stephen Ata Amankwaa | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+    <p>Stephen Atta Amankwaa | WDD 231 | Last Modified: <span id="lastModified"></span></p>
   </footer>
 
   <script src="scripts/main.js"></script>
   <script src="scripts/weather.js"></script>
 </body>
-
 </html>
