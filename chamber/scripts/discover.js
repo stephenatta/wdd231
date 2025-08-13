@@ -1,3 +1,5 @@
+// discover.js
+
 document.addEventListener("DOMContentLoaded", () => {
     const cardsGrid = document.querySelector(".cards-grid");
     const visitMessage = document.getElementById("visitMessage");
@@ -15,10 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 const figure = document.createElement("figure");
                 const img = document.createElement("img");
                 img.src = item.image;
-                img.alt = item.name;
+                img.alt = item.name || "Attraction image"; // Fallback alt
                 img.width = 300;
                 img.height = 200;
-                img.loading = "lazy"; // Lazy loading added
+                img.loading = "lazy"; // Lazy loading
                 figure.appendChild(img);
 
                 const address = document.createElement("address");
@@ -29,9 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const button = document.createElement("button");
                 button.textContent = "Learn more";
-                button.addEventListener("click", () => {
-                    openModal(item.name, item.description, item.address);
-                });
 
                 card.appendChild(title);
                 card.appendChild(figure);
@@ -51,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!lastVisit) {
         visitMessage.textContent = "Welcome! Let us know if you have any questions.";
     } else {
-        const daysSince = Math.floor((currentTime - lastVisit) / (1000 * 60 * 60 * 24));
+        const daysSince = Math.floor((currentTime - parseInt(lastVisit, 10)) / (1000 * 60 * 60 * 24));
         if (daysSince < 1) {
             visitMessage.textContent = "Back so soon! Awesome!";
         } else if (daysSince === 1) {
@@ -61,45 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    // Store current visit date
     localStorage.setItem("lastVisit", currentTime);
-
-    // ===== Modal Setup =====
-    const modal = document.createElement("div");
-    modal.id = "infoModal";
-    modal.style.display = "none";
-
-    const modalContent = document.createElement("div");
-    modalContent.classList.add("modal-content");
-
-    const closeBtn = document.createElement("span");
-    closeBtn.classList.add("close-btn");
-    closeBtn.innerHTML = "&times;";
-    closeBtn.addEventListener("click", () => {
-        modal.style.display = "none";
-    });
-
-    const modalTitle = document.createElement("h2");
-    const modalText = document.createElement("p");
-    const modalAddress = document.createElement("p");
-
-    modalContent.appendChild(closeBtn);
-    modalContent.appendChild(modalTitle);
-    modalContent.appendChild(modalAddress);
-    modalContent.appendChild(modalText);
-    modal.appendChild(modalContent);
-    document.body.appendChild(modal);
-
-    function openModal(title, description, address) {
-        modalTitle.textContent = title;
-        modalAddress.innerHTML = `<strong>Address:</strong> ${address}`;
-        modalText.textContent = description;
-        modal.style.display = "flex";
-    }
-
-    // Close modal when clicking outside
-    window.addEventListener("click", (e) => {
-        if (e.target === modal) {
-            modal.style.display = "none";
-        }
-    });
 });
