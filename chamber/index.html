@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +16,12 @@
   <title>Home | Accra Chamber of Commerce</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- Google Fonts Link (instead of @import) -->
+  <!-- Google Fonts Link (matching your main index page) -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
   <header>
     <nav>
@@ -37,7 +35,6 @@
   </header>
 
   <main>
-    <!-- h1 moved to be first element in main -->
     <h1>Accra Chamber of Commerce</h1>
 
     <section class="hero">
@@ -61,7 +58,6 @@
       <div class="card">
         <h3>Business Spotlight</h3>
         <p>See how local businesses are making an impact in our community every month.</p>
-        <!-- Example below-the-fold image with lazy loading -->
         <img src="images/chamber.jpeg" alt="Local business owner" loading="lazy">
       </div>
       <div class="card">
@@ -72,12 +68,12 @@
   </main>
 
   <footer>
-    <p>Contact: info@accracc.org | +233 24 000 0000</p>
+    <p>Contact: <a href="mailto:info@accracc.org">info@accracc.org</a> | +233 24 000 0000</p>
     <p>&copy; <span id="year"></span> Accra Chamber of Commerce</p>
     <p>Stephen Atta Amankwaa | WDD 231 | Last Modified: <span id="lastModified"></span></p>
   </footer>
 
-  <script src="scripts/main.js"></script>
-  <script src="scripts/weather.js"></script>
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
 </body>
 </html>

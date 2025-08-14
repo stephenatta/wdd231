@@ -4,54 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover | Accra Chamber of Commerce</title>
-    
+
     <!-- Meta Description -->
     <meta name="description" content="Discover Accra with the Accra Chamber of Commerce. Learn about local attractions, culture, and business opportunities in our vibrant city.">
-    
-    <!-- Meta Author -->
     <meta name="author" content="Stephen Atta Amankwaa">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
-    <!-- Open Graph Tags -->
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Discover Accra | Accra Chamber of Commerce">
     <meta property="og:description" content="Explore Accra's attractions, culture, and business opportunities with the Accra Chamber of Commerce. Connect, discover, and grow with us.">
     <meta property="og:image" content="images/osu-oxford-street.webp">
     <meta property="og:url" content="https://stephenatta.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
 
+    <!-- Styles -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/discover.css">
+
+    
+    <!-- Script -->
     <script defer src="scripts/discover.js"></script>
 </head>
 <body>
-<header>
-    <h1>Discover | Accra Chamber of Commerce</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html" class="active">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1>Discover Accra</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" aria-current="page">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        
+    </header>
 
-<main>
-    <section class="cards-grid">
-        <h2>Discover Accra</h2>
-        <!-- Cards will be injected here by discover.js -->
-    </section>
+    <main>
+        <section class="cards-grid" aria-labelledby="discover-heading">
+            <h2 id="discover-heading">Discover Accra</h2>
+            <!-- Cards injected by JS -->
+        </section>
 
-    <aside class="visit-message" id="visitMessage">
-        <!-- Visit message inserted here by JS -->
-    </aside>
-</main>
+        <aside class="visit-message" id="visitMessage" aria-live="polite"></aside>
+    </main>
 
-<footer>
-    <p>&copy; <span id="year"></span> Accra Chamber of Commerce</p>
-</footer>
+    <footer>
+        <p>&copy; <span id="year"></span> Accra Chamber of Commerce</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
