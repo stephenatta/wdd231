@@ -21,11 +21,23 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      border: 0;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="brand">
-      <img src="images/favicon1.ico" alt="Accra Weather logo" class="logo">
+      <img src="images/favicon1.ico" alt="Accra Weather favicon" class="logo">
       <span class="site-title">Accra Weather</span>
     </div>
 
@@ -61,6 +73,7 @@
     </section>
 
     <section id="current-summary" class="card" aria-live="polite">
+      <h2 class="visually-hidden">Current Weather Summary</h2>
       <!-- Current weather summary inserted by JS -->
     </section>
 
@@ -86,7 +99,7 @@
   <footer>
     <p>&copy; 2025 Accra Weather | 
       <a href="attributions.html">Attributions</a> | 
-      <a href="https://youtu.be/REPLACE_WITH_YOUR_VIDEO" target="_blank" rel="noopener">Demo Video</a>
+      <a href="https://www.loom.com/share/ec2d97c378574655a4324a7c98bb72f9?sid=8b3b3db3-e9cb-4f34-a84c-9b5b59588db6">Demo Video</a>
     </p>
   </footer>
 
