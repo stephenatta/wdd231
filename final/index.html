@@ -2,20 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Accra Weather — Home</title>
   <meta name="description" content="Accra Weather — real-time weather for Accra, Ghana (temperature, humidity, wind).">
   <meta name="author" content="Stephen Amankwaa Atta">
-
   <!-- Open Graph basic -->
-  <meta property="og:title" content="Accra Weather">
-  <meta property="og:description" content="Real-time weather for Accra, Ghana.">
-
+  <meta property="og:title" content="Accra Weather" />
+  <meta property="og:description" content="Real-time weather for Accra, Ghana." />
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
   <!-- Styles -->
   <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -56,6 +65,7 @@
     </section>
 
     <section id="current-summary" class="card" aria-live="polite">
+      <h2 class="visually-hidden">Current Weather Summary</h2>
       <!-- Current weather summary inserted by JS -->
     </section>
 
